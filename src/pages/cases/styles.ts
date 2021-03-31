@@ -86,28 +86,32 @@ export const ContentContainer = styled.div`
 `;
 
 export const WhiteContainer = styled.div`
-  width:1500px;
-  height:1500px;
+  width:100vw;
+  height:100vh
 
 `;
 
 export const CasesContainer = styled.div`
   max-width:1244px;
+  width:100%;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   grid-column-gap:10px;
-  grid-row-gap:5px;
-  margin:-50px 262px ;
+  grid-row-gap:0px;
+  margin:-50px auto;
+  padding:0 2rem;
 
   img{
-    max-width:500px;
+    width:100%;
   }
 
-  @media(max-width: 800px) {
-    grid-template-columns:1fr;
+  @media(max-width: 768px) {
+    grid-template-columns:1fr 1fr;
+  }
 
-    img{
-      max-width:400px;
-    }
+  @media(max-width: 600px) {
+    grid-template-columns:1fr;
+    margin:0 auto;
+    padding-top:30px;
   }
 `;

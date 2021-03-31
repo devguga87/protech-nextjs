@@ -42,7 +42,6 @@ export default function Cases(){
           <a href=""><img src="/tela9.png" alt=""/></a>
         </CasesContainer>
       </WhiteContainer>
-
     </>
   )
 }
