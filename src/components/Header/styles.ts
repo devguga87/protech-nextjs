@@ -22,8 +22,16 @@ export const HeaderContainer = styled.header`
     letter-spacing:-0.2px;
     color:#0F3560;
     font-weight:600;
+    display:inline-block; /* novo*/
+    height:2rem;/* novo*/
     & + a{
       margin-left:26px;
+    }
+
+    &.active{
+      font-weight:800;
+      border-bottom:2px solid #DF542A;
+      border-radius:1px;
     }
   }
   nav button {
@@ -43,5 +51,19 @@ export const HeaderContainer = styled.header`
         filter:opacity(0.7)
       }
   }
+  nav span{
+    margin-left:10px;
+    color: #0F3560;
+    font-family: Montserrat;
+    font-size: 11px;
+    letter-spacing: -0.2px;
+    line-height: 14px;
+
+    &.active{
+      font-weight:700;
+      color:#DF542A
+    }
+  }
+
 
 `

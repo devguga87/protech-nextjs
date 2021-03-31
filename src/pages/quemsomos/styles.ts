@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+const appearFromLeft = keyframes`
+  from{
+    opacity:0;
+    transform: translateX(-80px);
+  }
+  to{
+    opacity:1;
+    transform: translateX(0);
+  }
+`;
 
 export const OrangeContainer = styled.div`
   height:800px;
@@ -11,9 +22,10 @@ export const ContentContainer = styled.div`
   margin:0 auto;
   display:flex;
   justify-content:space-between;
-
+  padding: 0 3rem;
   div{
     padding-top:267px;
+    animation: ${appearFromLeft} 1s;
   }
 
   nav{
@@ -27,6 +39,10 @@ export const ContentContainer = styled.div`
     letter-spacing: 0.14px;
     line-height: 20px;
     text-align: right;
+
+    a.active{
+      font-weight:600;
+    }
   }
 
   h3{
@@ -53,7 +69,7 @@ export const ContentContainer = styled.div`
 
   h2{
     font-size:40px;
-    width:650px;
+    max-width:650px;
     color:#fff;
 
     span{
@@ -62,7 +78,7 @@ export const ContentContainer = styled.div`
   }
 
   p{
-    width: 700px;
+    max-width: 700px;
     margin-top:26px;
     font-size:14px;
     color:#fff;
@@ -81,7 +97,8 @@ export const WhiteContainer = styled.div`
     margin-top:110px;
 
     img{
-      width:500px;
+      width:100%;
+      max-width:500px;
       height:243px;
     }
   }
@@ -91,6 +108,8 @@ export const InstContent = styled.div`
   max-width:1244px;
   margin:0 auto;
   padding-top:100px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 
   h3{
     color: #0F3560;
@@ -116,7 +135,7 @@ export const InstContent = styled.div`
 
   h2{
     font-size:40px;
-    width:650px;
+    max-width:650px;
     color:#CA4820;
     margin-bottom:19px;
 
@@ -137,7 +156,7 @@ export const InstContent = styled.div`
 `;
 
 export const GrayContainer = styled.div`
-  height:800px;
+  height:600px;
   background-color:#E8EBF1;
   width:100vw;
 `;
@@ -146,7 +165,8 @@ export const WorkContent = styled.div`
   max-width:1244px;
   margin:0 auto;
   padding-top:143px;
-
+  padding-left: 3rem;
+  padding-right: 3rem;
 
   h3{
     color: #0F3560;
@@ -172,7 +192,7 @@ export const WorkContent = styled.div`
 
   h2{
     font-size:40px;
-    width:650px;
+    max-width:650px;
     color:#CA4820;
     margin-bottom:19px;
 

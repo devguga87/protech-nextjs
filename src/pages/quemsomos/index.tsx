@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { OrangeContainer, ContentContainer, WhiteContainer, InstContent, WorkContent, GrayContainer} from './styles';
 
 export default function QuemSomos(){
@@ -5,19 +6,24 @@ export default function QuemSomos(){
     <>
       <OrangeContainer>
         <ContentContainer>
-          <div>
-            <h3>QUEM SOMOS</h3>
-            <h2>DESENVOLVEMOS SOLUÇÕES PENSANDO <span>NAS PESSOAS</span>.</h2>
-            <p>Somos a PROTECH SOLUTIONS</p>
-            <p>Uma empresa focada em consultoria de TI que atua há 6 anos com desenvolvimento,
-              manutenção e testes de softwares em ambiente corporativo, atendendo a grandes empresas.
-            </p>
-          </div>
-          {/* <nav>
-            <a href="">Home</a>
-            <span> > </span>
-            <a href="">Quem Somos</a>
-          </nav> */}
+            <div>
+              <h3>QUEM SOMOS</h3>
+              <h2>DESENVOLVEMOS SOLUÇÕES PENSANDO <span>NAS PESSOAS</span>.</h2>
+              <p>Somos a PROTECH SOLUTIONS</p>
+              <p>Uma empresa focada em consultoria de TI que atua há 6 anos com desenvolvimento,
+                manutenção e testes de softwares em ambiente corporativo, atendendo a grandes empresas.
+              </p>
+            </div>
+            <nav>
+              <Link href="/">
+                <a >Home</a>
+              </Link>
+              <span> > </span>
+              <Link href="/quemsomos">
+                <a className='active'>Quem Somos</a>
+              </Link>
+            </nav>
+          {/* <img src="/setadown.svg" alt=""/> */}
         </ContentContainer>
         <img src="" alt=""/>
       </OrangeContainer>
@@ -34,11 +40,11 @@ export default function QuemSomos(){
             </p>
           </div>
         </InstContent>
-        {/* <div>
+        <div>
           <img src="/1.png" alt=""/>
           <img src="/1.png" alt=""/>
           <img src="/1.png" alt=""/>
-        </div> */}
+        </div>
       </WhiteContainer>
 
       <GrayContainer>
