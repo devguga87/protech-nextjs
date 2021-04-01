@@ -1,11 +1,16 @@
-import { CasesContainer, WhiteContainer, StyledNavButton, NavFooter} from './styles'
+import { CasesContainer, WhiteContainer, StyledNavButton, NavFooter, ProjectDescription, ImagesContainer } from './styles'
+
+interface Image{
+  id:number;
+  name:string;
+}
 
 interface CodeCaseProps{
   description:string;
   client:string;
   date:string;
   link?:string;
-  images:string[];
+  images:Image[];
 }
 export function CodeCases({description,client,date,images,link}:CodeCaseProps){
   return(
@@ -20,7 +25,7 @@ export function CodeCases({description,client,date,images,link}:CodeCaseProps){
 
         <CasesContainer>
           <div>
-            <div>
+            <ProjectDescription>
                 <h2>DESCRIÇÃO DO PROJETO</h2>
                 <p>{description}</p>
                 <h2>CLIENTE</h2>
@@ -35,15 +40,20 @@ export function CodeCases({description,client,date,images,link}:CodeCaseProps){
                 ): (
                   <></>
                 )}
-            </div>
+            </ProjectDescription>
 
-            <div>
-              {images.map(image => {
-                <img src='/1.png' alt=""/>
-              })}
-              {/* <img src="/case1/3.png" alt=""/>
-              <img src="/case1/4.png" alt=""/> */}
-            </div>
+            <ImagesContainer>
+              {/* { images ? (
+                images.map(image => {
+                    <h1>Hello</h1>
+                })) : (
+                    <></>
+                  )
+              } */}
+
+              <img src="/case1/3.png" alt=""/>
+              <img src="/case1/4.png" alt=""/>
+            </ImagesContainer>
           </div>
 
         <NavFooter>

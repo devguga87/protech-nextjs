@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { OrangeContainer, ContentContainer, WhiteContainer, InstContent, WorkContent, GrayContainer} from './styles';
+import { OrangeContainer, ContentContainer, WhiteContainer, InstContent, WorkContent, GrayContainer, ImageContent} from './styles';
 
 export default function QuemSomos(){
   return(
@@ -13,10 +13,11 @@ export default function QuemSomos(){
               <p>Uma empresa focada em consultoria de TI que atua há 6 anos com desenvolvimento,
                 manutenção e testes de softwares em ambiente corporativo, atendendo a grandes empresas.
               </p>
+              <a href="#instalacoes">()</a>
             </div>
             <nav>
               <Link href="/">
-                <a >Home</a>
+                <a>Home</a>
               </Link>
               <span> > </span>
               <Link href="/quemsomos">
@@ -28,10 +29,10 @@ export default function QuemSomos(){
         <img src="" alt=""/>
       </OrangeContainer>
 
-      <WhiteContainer>
+      <WhiteContainer id='instalacoes'>
         <InstContent>
-          <div>
-            <h3>NOSSA ESTRUTURA</h3>
+          <div >
+            <h3 >NOSSA ESTRUTURA</h3>
             <h2>INSTALAÇÕES <span>.</span></h2>
             <p>
               Dispomos de uma estrutura moderna, confortável, em um ambiente climatizado, com sala de reunião para atendimento
@@ -40,11 +41,11 @@ export default function QuemSomos(){
             </p>
           </div>
         </InstContent>
-        <div>
+        <ImageContent>
           <img src="/1.png" alt=""/>
+          <img src="/3.png" alt=""/>
           <img src="/1.png" alt=""/>
-          <img src="/1.png" alt=""/>
-        </div>
+        </ImageContent>
       </WhiteContainer>
 
       <GrayContainer>

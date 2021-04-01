@@ -17,12 +17,19 @@ export const OrangeContainer = styled.div`
   background-color:#CA4820;
   width:100vw;
   overflow:hidden;
+  padding: 0 5rem;
 
   img {
     position:absolute;
     transform:rotateY(180deg);
     right:-55px;
     top:150px;
+  }
+
+  @media(max-width:700px){
+    img{
+      display:none;
+    }
   }
 `;
 
@@ -31,7 +38,6 @@ export const ContentContainer = styled.div`
   margin:0 auto;
   display:flex;
   justify-content:space-between;
-  padding: 0 3rem;
   div{
     padding-top:147px;
     animation: ${appearFromLeft} 1s;
@@ -48,12 +54,23 @@ export const ContentContainer = styled.div`
     letter-spacing: 0.14px;
     line-height: 20px;
     text-align: right;
+    span{
+      margin-left:5px;
+    }
 
-  }
+    a{
+        margin-left:5px
+      }
+
+      a.active{
+        font-weight:600;
+      }
+
+    }
+
 
   h3{
     color: #FFFFFF;
-    font-family: Montserrat;
     font-size: 13px;
     letter-spacing: -0.07px;
     line-height: 16px;
@@ -93,6 +110,41 @@ export const ContentContainer = styled.div`
     line-height: 22px;
   }
 
+  @media(max-width:700px){
+      div{
+        margin:0 auto;
+        text-align:center;
+        padding-top:147px;
+        animation: ${appearFromLeft} 1s;
+      }
+
+      nav {
+        display:none;
+      }
+
+      h3:before{
+        height: 2px;
+        width: 40px;
+        transform: scaleY(-1);
+        border-radius: 2.5px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom:50%;
+        left:-10px;
+      }
+
+      h3:after{
+        content:'';
+        height: 2px;
+        width: 40px;
+        transform: scaleY(-1);
+        border-radius: 2.5px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom:50%;
+        right:-10px;
+      }
+  }
 `;
 
 export const WhiteContainer = styled.div`
@@ -168,8 +220,6 @@ export const NavFooter = styled.div`
     font-weight: 600;
     letter-spacing: 0.17px;
     line-height: 27px;
-
-
   }
 
   a img{

@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div<{background:'string'}>`
   height:97px;
   width:100vw;
   position:fixed;
-  background:#FFFFFF;
+  background:${props => props.background};
   display:flex;
   align-items:center;
 `;
 
-export const HeaderContainer = styled.header`
+
+export const HeaderContainer = styled.header<{color:'string'}>`
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -20,7 +21,8 @@ export const HeaderContainer = styled.header`
     font-size:11px;
     line-height:14px;
     letter-spacing:-0.2px;
-    color:#0F3560;
+    /* color:#0F3560; */
+    color:${props => props.color};
     font-weight:600;
     display:inline-block; /* novo*/
     height:2rem;/* novo*/
@@ -35,7 +37,7 @@ export const HeaderContainer = styled.header`
     }
   }
   nav button {
-      background-color:#fff;
+      background-color:transparent;
       height: 37.85px;
       width: 147px;
       border: 1px solid #DF542A;
@@ -53,7 +55,7 @@ export const HeaderContainer = styled.header`
   }
   nav span{
     margin-left:10px;
-    color: #0F3560;
+    color: ${props => props.color};
     font-family: Montserrat;
     font-size: 11px;
     letter-spacing: -0.2px;
@@ -62,6 +64,12 @@ export const HeaderContainer = styled.header`
     &.active{
       font-weight:700;
       color:#DF542A
+    }
+  }
+
+  @media(max-width: 430px) {
+    nav a {
+      display:none;
     }
   }
 

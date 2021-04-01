@@ -1,12 +1,16 @@
 import Head from 'next/head'
 
+import { Container } from './styles';
+
 export default function Home() {
   return (
     <>
       <Head>
         <title>Home</title>
       </Head>
-      <h1>Hello</h1>
+      <Container>
+        <h1>Hello</h1>
+      </Container>
     </>
   )
 }

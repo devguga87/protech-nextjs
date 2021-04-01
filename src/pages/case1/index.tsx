@@ -1,6 +1,8 @@
 import { OrangeContainer, ContentContainer,CasesContainer, WhiteContainer, NavFooter,  StyledNavButton} from './styles';
+import Link from 'next/link';
 import { CodeCases } from '../../components/CodeCases'
 export default function Cases(){
+  const images = [{id:1,name:'/1.png'}]
   return(
     <>
       <OrangeContainer>
@@ -12,11 +14,17 @@ export default function Cases(){
 
           </div>
           <nav>
-            <a href="">Home</a>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
             <span> > </span>
-            <a href="" className='active'>Portfólio</a>
+            <Link href="/cases">
+              <a>Portfólio</a>
+            </Link>
             <span> > </span>
-            <a href="" className='active'>Portal de Doações - Synapse</a>
+            <Link href="/case1">
+              <a className='active'>Portal de Doações - Synapse</a>
+            </Link>
 
           </nav>
         </ContentContainer>
@@ -81,6 +89,7 @@ export default function Cases(){
         Paypal, cartão de crédito Banese Card e de outras bandeiras. Deverá ser criado um portal de transparência sendo disponibilizado a todos.'
         client='Banese Card | IPTI'
         date='Junho 2019'
+        images='/2.png'
         link='https://www.ipti.org.br/projetos/synapse/'
       />
 

@@ -17,9 +17,13 @@ export default function Cases(){
               <a>Home</a>
             </Link>
             <span> > </span>
-            <a href="" className='active'>Portfólio</a>
+            <Link href="/cases">
+              <a >Portfólio</a>
+            </Link>
             <span> > </span>
-            <a href="" className='active'>Ver Todos</a>
+            <Link href="/cases">
+              <a className='active'>Ver Todos</a>
+            </Link>
           </nav>
         </ContentContainer>
         <img src="" alt=""/>

@@ -15,6 +15,7 @@ export const OrangeContainer = styled.div`
   height:800px;
   background-color:#CA4820;
   width:100vw;
+  padding:0 2rem;
 `;
 
 export const ContentContainer = styled.div`
@@ -26,6 +27,7 @@ export const ContentContainer = styled.div`
   div{
     padding-top:267px;
     animation: ${appearFromLeft} 1s;
+
   }
 
   nav{
@@ -70,6 +72,7 @@ export const ContentContainer = styled.div`
   h2{
     font-size:40px;
     max-width:650px;
+    width:100%;
     color:#fff;
 
     span{
@@ -92,16 +95,6 @@ export const WhiteContainer = styled.div`
   height:816px;
   background-color:#FFFFFF;
   width:100vw;
-
-  >div {
-    margin-top:110px;
-
-    img{
-      width:100%;
-      max-width:500px;
-      height:243px;
-    }
-  }
 `;
 
 export const InstContent = styled.div`
@@ -136,6 +129,7 @@ export const InstContent = styled.div`
   h2{
     font-size:40px;
     max-width:650px;
+    width:100%;
     color:#CA4820;
     margin-bottom:19px;
 
@@ -147,13 +141,25 @@ export const InstContent = styled.div`
   p{
     height: 59px;
     max-width: 898px;
+    width:100%;
     color: #0F3560;
-    font-family: Montserrat;
     font-size: 14px;
     letter-spacing: 0.18px;
     line-height: 22px;
   }
 `;
+
+export const ImageContent = styled.div `
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    img{
+      box-sizing:border-box;
+      margin-top:150px;
+      width:100%;
+      max-height:300px;
+    }
+`
 
 export const GrayContainer = styled.div`
   height:600px;
