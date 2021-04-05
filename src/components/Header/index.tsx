@@ -21,9 +21,9 @@ export function Header(){
             <a className={isActive('/')}>HOME</a>
             </Link>
             <Link href="/quemsomos">
-              <a className={isActive('/quemsomos')}>QUEM SOMOS</a>
+              <a>QUEM SOMOS</a>
             </Link>
-            <Link href="/">
+            <Link href="/#servicos" >
               <a>SERVIÇOS</a>
             </Link>
             <Link href="/">
@@ -57,16 +57,16 @@ export function Header(){
             <a className={isActive('/quemsomos')}>QUEM SOMOS</a>
           </Link>
           <Link href="/">
-            <a>SERVIÇOS</a>
+            <a className='disabled'>SERVIÇOS</a>
           </Link>
           <Link href="/">
-            <a >TECNOLOGIAS</a>
+            <a className='disabled'>TECNOLOGIAS</a>
           </Link>
           <Link href="/cases">
             <a className={isActive('/cases')}>CASES</a>
           </Link>
           <Link href="/">
-          <a>TRABALHE CONOSCO</a>
+          <a className='disabled'>TRABALHE CONOSCO</a>
           </Link>
           <button type='button'>ENTRE EM CONTATO</button>
           <span></span>

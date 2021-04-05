@@ -73,5 +73,8 @@ export const HeaderContainer = styled.header<{color:'string'}>`
     }
   }
 
-
+  a.disabled{
+    color:#d0d0d0;
+    pointer-events:none;
+  }
 `

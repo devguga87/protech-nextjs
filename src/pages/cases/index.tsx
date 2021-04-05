@@ -31,10 +31,12 @@ export default function Cases(){
 
       <WhiteContainer>
         <CasesContainer>
-          <Link href='/case1'>
+
+
+          <Link href='cases/0'>
             <a><img src="/tela1.png" alt=""/></a>
           </Link>
-          <Link href='/case2'>
+          <Link href='/cases/1'>
             <a><img src="/tela2.png" alt=""/></a>
           </Link>
           <a href=""><img src="/tela3.png" alt=""/></a>

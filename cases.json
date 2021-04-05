@@ -1,0 +1,128 @@
+[
+  {
+    "id":1,
+    "title":"Portal de Doações - Synapse",
+    "description":"Desenvolver um site de doações web, objetivando financiamento do programa e ações voltadas à Rede de Professores de Sergipe. Pessoas jurídicas e físicas, via web (site) vão poder conhecer o programa e as ações da RPS e poderão fazer doações por meio de boleto bancário, Paypal, cartão de crédito Banese Card e de outras bandeiras. Deverá ser criado um portal de transparência sendo disponibilizado a todos.",
+     "client":"Banese Card | IPTI",
+     "date":"Junho 2019",
+     "link":"https://www.ipti.org.br/projetos/synapse/",
+     "images": [
+      {
+        "id":1,
+        "name":"1.png"
+      },
+      {
+       "id":2,
+       "name":"2.png"
+     },
+     {
+       "id":3,
+       "name":"3.png"
+     },
+     {
+       "id":4,
+       "name":"4.png"
+     }
+    ]
+  },
+  {
+    "id":2,
+    "title":"Portal ELO NANQUIM",
+    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting",
+     "client":"Banese Card",
+     "date":"Janeiro 2021",
+     "link":"https://www.banesecard.com.br/EloNanquim/",
+     "images": [
+       {
+         "id":5,
+         "name":"5.png"
+       },
+       {
+        "id":6,
+        "name":"6.png"
+      }
+     ]
+  },
+  {
+    "id":3,
+    "title":"Portal do Cliente - Elo Nanquim",
+    "description":"Desenvolvimento de um no novo Portal do Cliente do Banese Card para que os clientes tenham ainda mais praticidade no uso do seu cartão. Com um novo layout e novas funcionalidades os clientes poderão renegociar sua dívida, solicitar estornos de compra, antecipar suas compras futuras, efetuar bloqueio do seu cartão, entre outras funções. ",
+     "client":"Banese Card",
+     "date":"Janeiro 2020",
+     "images": [
+       {
+         "id":7,
+         "name":"7.png"
+       }
+
+     ]
+  },
+  {
+    "id":4,
+    "title":"Portal do Cliente",
+    "description":"Desenvolvimento de um no novo Portal do Cliente do Banese Card para que os clientes tenham ainda mais praticidade no uso do seu cartão. Com um novo layout e novas funcionalidades os clientes poderão renegociar sua dívida, solicitar estornos de compra, antecipar suas compras futuras, efetuar bloqueio do seu cartão, entre outras funções. ",
+     "client":"Banese Card",
+     "date":"Janeiro 2020",
+     "images": [
+       {
+         "id":8,
+         "name":"8.png"
+       },
+       {
+        "id":9,
+        "name":"9.png"
+      },
+      {
+        "id":10,
+        "name":"10.png"
+      }
+     ]
+  },
+  {
+    "id":5,
+    "title":"Portal TKS",
+    "description":"Desenvolvimento de um no novo Portal do Cliente do Banese Card para que os clientes tenham ainda mais praticidade no uso do seu cartão. Com um novo layout e novas funcionalidades os clientes poderão renegociar sua dívida, solicitar estornos de compra, antecipar suas compras futuras, efetuar bloqueio do seu cartão, entre outras funções. ",
+     "client":"Banese Card",
+     "date":"Novembro 2018",
+     "images": [
+       {
+         "id":11,
+         "name":"11.png"
+       },
+       {
+        "id":12,
+        "name":"12.png"
+      },
+      {
+        "id":13,
+        "name":"13.png"
+      }
+     ]
+  },
+  {
+    "id":6,
+    "title":"Portal TKS Lojista",
+    "description":"Foi desenvolvido um novo Portal Lojista para SEAC, adicionando novas funcionalidades e desenvolvendo em uma nova tecnologia que seja do conhecimento da equipe de TI da SEAC, pois a mesma ficará responsável pelas manutenções e implementação de novos requisitos.",
+     "client":"Banese Card",
+     "date":"Novembro 2018",
+     "images": [
+       {
+         "id":14,
+         "name":"14.png"
+       },
+       {
+        "id":15,
+        "name":"15.png"
+      },
+      {
+        "id":16,
+        "name":"16.png"
+      },
+      {
+        "id":17,
+        "name":"17.png"
+      }
+     ]
+  }
+
+]
