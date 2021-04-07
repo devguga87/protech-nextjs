@@ -1,11 +1,11 @@
-import { ContainerFooter, ContainerInfosFooter, MenuFooter } from './styles';
+import * as S from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export function Footer(){
   return(
-    <ContainerFooter>
-      <ContainerInfosFooter>
+    <S.ContainerFooter>
+      <S.ContainerInfosFooter>
           <div className="info">
               <img src="/logo.svg" alt="" />
               <h3>+55 [79] 3023-6697</h3>
@@ -33,8 +33,8 @@ export function Footer(){
               atendendo grandes empresas.
               </p>
           </div>
-      </ContainerInfosFooter>
-      <MenuFooter>
+      </S.ContainerInfosFooter>
+      <S.MenuFooter>
           <p>© 2020 Protech Solutions</p>
           <ul>
               <a href="">HOME</a>
@@ -45,8 +45,8 @@ export function Footer(){
               <a href="">TRABALHE CONOSCO</a>
               <a href="">ENTRE EM CONTATO</a>
           </ul>
-      </MenuFooter>
-  </ContainerFooter>
+      </S.MenuFooter>
+  </S.ContainerFooter>
 );
 
 }

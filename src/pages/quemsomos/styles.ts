@@ -19,24 +19,31 @@ export const OrangeContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
+  position:relative;
   max-width:1244px;
   margin:0 auto;
-  display:flex;
-  justify-content:space-between;
   padding: 0 3rem;
+  height:100%;
+  >div{
+    display:flex;
+    justify-content:space-between;
+
+    div{
+      animation: ${appearFromLeft} 1s;
+    }
+  }
+
   div{
-    padding-top:267px;
-    animation: ${appearFromLeft} 1s;
+    padding-top:120px;
 
   }
 
   nav{
-    padding-top:153px;
+    padding-top:80px;
     color:#FFFFFF;
     height: 22px;
     width: 316px;
     color: #FFFFFF;
-    font-family: Montserrat;
     font-size: 11px;
     letter-spacing: 0.14px;
     line-height: 20px;
@@ -45,6 +52,7 @@ export const ContentContainer = styled.div`
     a.active{
       font-weight:600;
     }
+
   }
 
   h3{
@@ -90,6 +98,20 @@ export const ContentContainer = styled.div`
   }
 
 `;
+
+export const NavArrow = styled.a`
+  position:absolute;
+  bottom:1rem;
+  right:3rem;
+  img{
+    right:0;
+    top:120px;
+    align-items:right;
+    height: 20px;
+    width: 31px;
+    margin-top:80
+  }
+`
 
 export const WhiteContainer = styled.div`
   height:816px;
@@ -176,7 +198,6 @@ export const WorkContent = styled.div`
 
   h3{
     color: #0F3560;
-    font-family: Montserrat;
     font-size: 13px;
     letter-spacing: -0.07px;
     line-height: 16px;
@@ -199,11 +220,11 @@ export const WorkContent = styled.div`
   h2{
     font-size:40px;
     max-width:650px;
-    color:#CA4820;
+    color: #0F3560;
     margin-bottom:19px;
 
     span{
-      color:#0F3560
+      color:#CA4820;
     }
   }
 

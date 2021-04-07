@@ -1,5 +1,6 @@
-import { OrangeContainer, ContentContainer} from './styles';
 import Link from 'next/link';
+
+import * as S from './styles';
 
 interface IntroContainerProps{
   title:string;
@@ -7,8 +8,8 @@ interface IntroContainerProps{
 
 export function IntroContainer({title}:IntroContainerProps){
   return(
-    <OrangeContainer>
-      <ContentContainer>
+    <S.OrangeContainer>
+      <S.ContentContainer>
         <div>
           <h3>ÚLTIMOS PROJETOS</h3>
           <h2>CASES<span>.</span></h2>
@@ -29,9 +30,9 @@ export function IntroContainer({title}:IntroContainerProps){
           </Link>
 
         </nav>
-      </ContentContainer>
+      </S.ContentContainer>
       <img src="/whitesimbol.svg" alt=""/>
-    </OrangeContainer>
+    </S.OrangeContainer>
   )
 }
 

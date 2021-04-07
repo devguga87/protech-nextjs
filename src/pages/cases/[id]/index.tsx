@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router';
-import { GetServerSideProps } from "next";
+import Head from 'next/head';
 
 import { CodeCases } from '../../../components/CodeCases'
 import { IntroContainer } from '../../../components/IntroContainer';
@@ -25,6 +24,9 @@ interface CaseProps{
 export default function Case(props:CaseProps){
   return (
     <>
+      <Head>
+        <title>Protech | {props.case.title}</title>
+      </Head>
       <IntroContainer title={props.case.title} />
       <CodeCases
         description={props.case.description}

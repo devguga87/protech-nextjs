@@ -1,11 +1,16 @@
 import Link from 'next/link';
-import { OrangeContainer, ContentContainer,CasesContainer, WhiteContainer} from './styles';
+import Head from 'next/head';
+
+import * as S from './styles';
 
 export default function Cases(){
   return(
     <>
-      <OrangeContainer>
-        <ContentContainer>
+      <Head>
+        <title>Protech | Cases</title>
+      </Head>
+      <S.OrangeContainer>
+        <S.ContentContainer>
           <div>
             <h3>ÚLTIMOS PROJETOS</h3>
             <h2>CASES<span>.</span></h2>
@@ -25,12 +30,12 @@ export default function Cases(){
               <a className='active'>Ver Todos</a>
             </Link>
           </nav>
-        </ContentContainer>
+        </S.ContentContainer>
         <img src="" alt=""/>
-      </OrangeContainer>
+      </S.OrangeContainer>
 
-      <WhiteContainer>
-        <CasesContainer>
+      <S.WhiteContainer>
+        <S.CasesContainer>
 
 
           <Link href='cases/0'>
@@ -46,8 +51,8 @@ export default function Cases(){
           <a href=""><img src="/tela7.png" alt=""/></a>
           <a href=""><img src="/tela8.png" alt=""/></a>
           <a href=""><img src="/tela9.png" alt=""/></a>
-        </CasesContainer>
-      </WhiteContainer>
+        </S.CasesContainer>
+      </S.WhiteContainer>
     </>
   )
 }
