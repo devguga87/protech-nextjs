@@ -9,6 +9,7 @@ import { CardTecnologias } from 'components/CardTecnologias';
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { CardVagas } from 'components/CardVagas';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -124,16 +125,22 @@ export default function Home() {
           </div>
         </S.InstContent>
         <S.ImageContent>
-          <Swiper
-            spaceBetween={10}
+          <S.StyledSwiper
+            spaceBetween={100}
             slidesPerView={3}
             navigation
             pagination={{ clickable: true }}
-            onSwiper={swiper => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
+            autoplay={true}
+            speed={1000}
           >
             <SwiperSlide>
               <img src="/1.png" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/2.png" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/3.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
               <img src="/3.png" alt="" />
@@ -141,9 +148,43 @@ export default function Home() {
             <SwiperSlide>
               <img src="/1.png" alt="" />
             </SwiperSlide>
-          </Swiper>
+          </S.StyledSwiper>
         </S.ImageContent>
       </S.WhiteContainer>
+
+      <S.OrangeContainer2>
+        <S.WorkContent2>
+          <div>
+            <h3>CONFIRA NOSSAS VAGAS</h3>
+            <h2>
+              <span>TRABALHE</span> CONOSCO<span>.</span>
+            </h2>
+            <p>
+              Venha crescer com a gente! Confira as vagas em aberto e nos envie
+              o seu currículo/portfólio.
+            </p>
+          </div>
+          <S.MiniCardsContainer>
+            <CardVagas />
+            <CardVagas />
+            <S.Depoimento>
+              <img src="/logo.svg" alt="icone" />
+              <p>
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Duis sed quam libero. Sed eget ante eu
+                enim ultrices efficitur sed et leo. Sed et venenatis ligula.
+                Donec molestie, nunc vel pharetra suscipit, sapien lacus
+                hendrerit quam, sit amet imperdiet dui metus non tellus. Quisque
+                a congue lorem.
+              </p>
+              <div>
+                <h3>Sara Martins</h3>
+                <h6>UX/UI Designer</h6>
+              </div>
+            </S.Depoimento>
+          </S.MiniCardsContainer>
+        </S.WorkContent2>
+      </S.OrangeContainer2>
     </>
   );
 }

@@ -72,7 +72,6 @@ export const InstContent = styled.div`
 `;
 
 export const ImageContent = styled.div`
-  max-width: 1800px;
   width: 100%;
   max-height: 500px;
   height: 100%;
@@ -85,7 +84,7 @@ export const ImageContent = styled.div`
 `;
 
 export const StyledSwiper = styled(Swiper)`
-  width: 100%;
+  max-width: 1700px;
   margin-left: 20px;
   img {
     box-sizing: border-box;
