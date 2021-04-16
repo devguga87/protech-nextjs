@@ -27,10 +27,12 @@ export default function Home() {
         </S.InstContent>
         <S.ImageContent>
           <S.StyledSwiper
-            spaceBetween={600}
+            spaceBetween={100}
             slidesPerView={3}
             navigation
             pagination={{ clickable: true }}
+            autoplay={true}
+            speed={1000}
           >
             <SwiperSlide>
               <img src="/1.png" alt="" />

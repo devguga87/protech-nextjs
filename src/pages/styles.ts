@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { Swiper } from 'swiper/react';
 
 const appearFromLeft = keyframes`
   from{
@@ -352,7 +353,7 @@ export const InstContent = styled.div`
 `;
 
 export const ImageContent = styled.div`
-  max-width: 100%;
+  width: 100%;
   max-height: 500px;
   height: 100%;
   position: absolute;
@@ -361,10 +362,21 @@ export const ImageContent = styled.div`
   background: #6086b4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+`;
+
+export const StyledSwiper = styled(Swiper)`
+  max-width: 1700px;
+  margin-left: 20px;
   img {
     box-sizing: border-box;
-    max-width: 100%;
-    max-height: 400px;
-    margin-top: 40px;
+    width: 600px;
+    max-height: 600px;
+    margin-top: 41px;
+  }
+`;
+
+export const Depoimento = styled.div`
+  img {
+    margin-top: -90px;
   }
 `;
