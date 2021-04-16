@@ -34,4 +34,4 @@ yarn-error.log*
 .vercel
 
 #debug
-src/pages/debugger
+# src/pages/debugger
