@@ -12,7 +12,7 @@ export function NavBar() {
 
   if (router.pathname == '/') {
     return (
-      <S.Container background="#0F3560">
+      <S.Container background="transparent">
         <S.HeaderContainer color="white">
           <img src="/logo.svg" alt="Logo Protech" />
           <nav>
@@ -35,7 +35,7 @@ export function NavBar() {
               <a>TRABALHE CONOSCO</a>
             </Link>
             <button type="button">ENTRE EM CONTATO</button>
-            <span></span>
+            <div></div>
             <span className="active">PT</span>
             <span>EN</span>
           </nav>

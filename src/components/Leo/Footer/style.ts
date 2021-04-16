@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const ContainerFooter = styled.footer`
   padding: 1rem;
   background-color: #0f3560;
-
-  /* margin-top:-150px; */
 `;
 export const ContainerInfosFooter = styled.div`
   display: flex;
@@ -62,6 +60,27 @@ export const ContainerInfosFooter = styled.div`
     position: absolute;
     bottom: 0;
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  /* Telefones em paisagem a tablet em retrato */
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  /* Tablet em retrato a paisagem e desktop */
+  @media (min-width: 768px) and (max-width: 979px) {
+    width: 100%;
+  }
+
+  /* Desktop grande */
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
 `;
 
 export const MenuFooter = styled.div`
@@ -79,6 +98,23 @@ export const MenuFooter = styled.div`
     font-size: 12px;
     letter-spacing: -0.22px;
     line-height: 15px;
+    position: relative;
+    :hover::before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #df542a;
+      position: absolute;
+      bottom: -10px;
+    }
+    :active::before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #df542a;
+      position: absolute;
+      bottom: -10px;
+    }
   }
   p {
     opacity: 0.5;
@@ -86,5 +122,34 @@ export const MenuFooter = styled.div`
     font-size: 15px;
     letter-spacing: 0;
     line-height: 24px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Telefones em paisagem a tablet em retrato */
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  /* Tablet em retrato a paisagem e desktop */
+  @media (min-width: 768px) and (max-width: 979px) {
+    width: 100%;
+  }
+
+  /* Desktop grande */
+  @media (min-width: 1200px) {
+    width: 100%;
   }
 `;

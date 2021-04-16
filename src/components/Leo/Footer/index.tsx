@@ -1,4 +1,5 @@
-import * as S from './styles';
+import React from 'react';
+import { ContainerFooter, ContainerInfosFooter, MenuFooter } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faInstagram,
@@ -7,10 +8,10 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 
-export function Footer() {
+const Footer: React.FC = () => {
   return (
-    <S.ContainerFooter>
-      <S.ContainerInfosFooter>
+    <ContainerFooter>
+      <ContainerInfosFooter>
         <div className="info">
           <img src="/logo.svg" alt="" />
           <h3>+55 [79] 3023-6697</h3>
@@ -47,8 +48,8 @@ export function Footer() {
             em ambiente corporativo, atendendo grandes empresas.
           </p>
         </div>
-      </S.ContainerInfosFooter>
-      <S.MenuFooter>
+      </ContainerInfosFooter>
+      <MenuFooter>
         <p>© 2020 Protech Solutions</p>
         <ul>
           <a href="">HOME</a>
@@ -59,7 +60,9 @@ export function Footer() {
           <a href="">TRABALHE CONOSCO</a>
           <a href="">ENTRE EM CONTATO</a>
         </ul>
-      </S.MenuFooter>
-    </S.ContainerFooter>
+      </MenuFooter>
+    </ContainerFooter>
   );
-}
+};
+
+export default Footer;

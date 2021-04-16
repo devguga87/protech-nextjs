@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const appearFromLeft = keyframes`
   from{
@@ -12,146 +12,144 @@ const appearFromLeft = keyframes`
 `;
 
 export const OrangeContainer = styled.div`
-  height:370px;
-  background-color:#CA4820;
-  width:100vw;
+  height: 370px;
+  background-color: #ca4820;
+  width: 100vw;
 `;
 
 export const ContentContainer = styled.div`
-  max-width:1244px;
-  margin:0 auto;
-  display:flex;
-  justify-content:space-between;
+  max-width: 1244px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   padding: 0 3rem;
-  div{
-    padding-top:147px;
+  div {
+    padding-top: 147px;
     animation: ${appearFromLeft} 1s;
   }
 
-  nav{
-    padding-top:153px;
-    color:#FFFFFF;
+  nav {
+    padding-top: 153px;
+    color: #ffffff;
     height: 22px;
     width: 316px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: Montserrat;
     font-size: 11px;
     letter-spacing: 0.14px;
     line-height: 20px;
     text-align: right;
 
-    span{
-      margin-left:5px;
+    span {
+      margin-left: 5px;
     }
 
-    a{
-      margin-left:5px
+    a {
+      margin-left: 5px;
     }
 
-    a.active{
-      font-weight:600;
+    a.active {
+      font-weight: 600;
     }
   }
 
-  h3{
-    color: #FFFFFF;
-    font-family: Montserrat;
+  h3 {
+    color: #ffffff;
     font-size: 13px;
     letter-spacing: -0.07px;
     line-height: 16px;
-    margin-bottom:13px;
-    position:relative;
-    font-weight:600;
+    margin-bottom: 13px;
+    position: relative;
+    font-weight: 600;
 
-    &:before{
-      content:'';
+    &:before {
+      content: '';
       height: 2px;
       width: 40px;
       transform: scaleY(-1);
       border-radius: 2.5px;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       position: absolute;
-      bottom:50%;
-      left:-50px;
+      bottom: 50%;
+      left: -50px;
     }
   }
 
-  h2{
-    font-size:40px;
-    max-width:650px;
-    color:#fff;
+  h2 {
+    font-size: 40px;
+    max-width: 650px;
+    color: #fff;
 
-    span{
-      color:#0F3560
+    span {
+      color: #0f3560;
     }
   }
 
-  p{
+  p {
     max-width: 700px;
-    margin-top:26px;
-    font-size:14px;
-    color:#fff;
+    margin-top: 26px;
+    font-size: 14px;
+    color: #fff;
     letter-spacing: 0.18px;
     line-height: 22px;
   }
 
-  @media(max-width:700px){
-      div{
-        margin:0 auto;
-        text-align:center;
-        padding-top:147px;
-        animation: ${appearFromLeft} 1s;
-      }
+  @media (max-width: 700px) {
+    div {
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 147px;
+      animation: ${appearFromLeft} 1s;
+    }
 
-      nav {
-        display:none;
-      }
+    nav {
+      display: none;
+    }
 
-      h3:before{
-        left:50px;
-      }
+    h3:before {
+      left: 50px;
+    }
 
-      h3:after{
-        content:'';
-        height: 2px;
-        width: 40px;
-        transform: scaleY(-1);
-        border-radius: 2.5px;
-        background-color: #FFFFFF;
-        position: absolute;
-        bottom:50%;
-        right:50px;
-      }
+    h3:after {
+      content: '';
+      height: 2px;
+      width: 40px;
+      transform: scaleY(-1);
+      border-radius: 2.5px;
+      background-color: #ffffff;
+      position: absolute;
+      bottom: 50%;
+      right: 50px;
+    }
   }
 `;
 
 export const WhiteContainer = styled.div`
-  width:100vw;
-  max-height:4350px;
-
+  width: 100vw;
+  max-height: 4350px;
 `;
 
 export const CasesContainer = styled.div`
-  max-width:1244px;
-  width:100%;
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-column-gap:10px;
-  grid-row-gap:0px;
-  margin:-50px auto 50px auto;
-  padding:0 2rem;
+  max-width: 1244px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  margin: -50px auto 50px auto;
+  padding: 0 2rem;
 
-  img{
-    width:100%;
+  img {
+    width: 100%;
   }
 
-  @media(max-width: 768px) {
-    grid-template-columns:1fr 1fr;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media(max-width: 600px) {
-    grid-template-columns:1fr;
-    margin:0 auto;
-    padding-top:30px;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding-top: 30px;
   }
 `;
