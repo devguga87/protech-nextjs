@@ -91,6 +91,6 @@ export const StyledSwiper = styled(Swiper)`
     box-sizing: border-box;
     width: 600px;
     max-height: 600px;
-    margin-top: 40px;
+    margin-top: 41px;
   }
 `;
