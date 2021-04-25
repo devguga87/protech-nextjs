@@ -44,13 +44,21 @@ export default function Cases(){
           <Link href='/cases/1'>
             <a><img src="/tela2.png" alt=""/></a>
           </Link>
-          <a href=""><img src="/tela3.png" alt=""/></a>
-          <a href=""><img src="/tela4.png" alt=""/></a>
-          <a href=""><img src="/tela5.png" alt=""/></a>
-          <a href=""><img src="/tela6.png" alt=""/></a>
-          <a href=""><img src="/tela7.png" alt=""/></a>
-          <a href=""><img src="/tela8.png" alt=""/></a>
-          <a href=""><img src="/tela9.png" alt=""/></a>
+          <Link href='/cases/1'>
+           <a><img src="/tela3.png" alt=""/></a>
+          </Link>
+          <Link href='/cases/2'>
+           <a href=""><img src="/tela4.png" alt=""/></a>
+          </Link>
+           <a><img src="/tela5.png" alt=""/></a>
+          <Link href='/cases/4'>
+            <a><img src="/tela6.png" alt=""/></a>
+          </Link>
+          <Link href='/cases/5'>
+            <a><img src="/tela7.png" alt=""/></a>
+          </Link>
+          <a ><img src="/tela8.png" alt=""/></a>
+          <a ><img src="/tela9.png" alt=""/></a>
         </S.CasesContainer>
       </S.WhiteContainer>
     </>

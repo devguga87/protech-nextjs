@@ -1,17 +1,17 @@
 import * as S from './styles';
 
 interface MiniCardsProps {
-  number: string;
-  title: string;
-  description: string;
+  numeroDoCard: string;
+  titulo: string;
+  descricao: string;
 }
 // {number, title, description}:MiniCardsProsp
-export function MiniCards({ number, title, description }: MiniCardsProps) {
+export function MiniCards({ numeroDoCard, titulo, descricao }: MiniCardsProps) {
   return (
     <S.Container>
-      <h4>{number}</h4>
-      <h5>{title}</h5>
-      <p>{description}</p>
+      <h4>{numeroDoCard}</h4>
+      <h5>{titulo}</h5>
+      <p>{descricao}</p>
     </S.Container>
   );
 }

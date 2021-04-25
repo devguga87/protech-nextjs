@@ -1,10 +1,20 @@
 import styled from 'styled-components';
 
-export const Container = styled.div<{ background: 'string' }>`
+interface ContainerProps {
+  background?: string;
+  backgroundImage?: string;
+}
+
+export const Container = styled.div<ContainerProps>`
   height: 97px;
   width: 100vw;
   position: fixed;
   background: ${props => props.background};
+  background-image: url(${props => props.backgroundImage});
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
   display: flex;
   align-items: center;
   z-index: 1;
@@ -26,14 +36,22 @@ export const HeaderContainer = styled.header<{ color: 'string' }>`
     font-weight: 600;
     display: inline-block; /* novo*/
     height: 2rem; /* novo*/
+    transition: filter 0.2s;
     & + a {
       margin-left: 26px;
+    }
+    &:hover {
+      filter: opacity(0.7);
     }
 
     &.active {
       font-weight: 800;
       border-bottom: 2px solid #df542a;
       border-radius: 1px;
+
+      &:hover {
+        filter: opacity(1);
+      }
     }
   }
   nav button {

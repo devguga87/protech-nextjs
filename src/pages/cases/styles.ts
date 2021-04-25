@@ -11,6 +11,15 @@ const appearFromLeft = keyframes`
   }
 `;
 
+const appear = keyframes`
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+`;
+
 export const OrangeContainer = styled.div`
   height: 370px;
   background-color: #ca4820;
@@ -141,6 +150,11 @@ export const CasesContainer = styled.div`
 
   img {
     width: 100%;
+    transition: transform 0.2s;
+    animation: ${appear} 4s;
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   @media (max-width: 768px) {

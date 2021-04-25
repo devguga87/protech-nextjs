@@ -12,11 +12,20 @@ const appearFromLeft = keyframes`
   }
 `;
 
+const appear = keyframes`
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+`;
+
 export const OrangeContainer = styled.div`
   height: 800px;
   width: 100vw;
   padding: 0 2rem;
-  background-image: url('/backgroundProtech.svg');
+  background-image: url('/backgroundProtech.jpg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +38,6 @@ export const ContentContainer = styled.div`
   margin: 0 auto;
   padding: 0 3rem;
   height: 100%;
-
   div {
     animation: ${appearFromLeft} 1s;
     padding-top: 220px;
@@ -53,7 +61,6 @@ export const ContentContainer = styled.div`
 
   h3 {
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 13px;
     letter-spacing: -0.07px;
     line-height: 16px;
@@ -80,7 +87,7 @@ export const ContentContainer = styled.div`
     color: #fff;
 
     span {
-      color: #0f3560;
+      color: #ca4820;
     }
   }
 
@@ -126,6 +133,7 @@ export const GrayContainer = styled.div`
   height: 637px; /*era 600px*/
   background-color: #e8ebf1;
   width: 100vw;
+  position: relative;
 `;
 
 export const WorkContent = styled.div`
@@ -193,6 +201,10 @@ export const WorkContent = styled.div`
       filter: brightness(0.8);
     }
   }
+
+  img {
+    text-align: left;
+  }
 `;
 
 export const ServiceCardContainer = styled.div`
@@ -209,13 +221,20 @@ export const OrangeContainer2 = styled.div`
   padding: 0 2rem;
 `;
 
+export const OrangeContainer3 = styled.div`
+  height: 800px;
+  background-color: #ca4820;
+  width: 100vw;
+  padding: 0 2rem;
+`;
+
 export const WorkContent2 = styled.div`
   max-width: 1244px;
   margin: 0 auto;
-  padding-top: 270px;
+  padding-top: 140px;
   padding-left: 3rem;
   padding-right: 3rem;
-
+  color: #fff;
   h3 {
     color: #fff;
     font-size: 13px;
@@ -248,7 +267,7 @@ export const WorkContent2 = styled.div`
     }
   }
 
-  p {
+  h6 {
     max-width: 898px;
     color: #fff;
     font-size: 14px;
@@ -306,6 +325,8 @@ export const InstContent = styled.div`
   padding-top: 150px;
   padding-left: 3rem;
   padding-right: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   h3 {
     color: #0f3560;
@@ -378,5 +399,105 @@ export const StyledSwiper = styled(Swiper)`
 export const Depoimento = styled.div`
   img {
     margin-top: -90px;
+  }
+`;
+
+export const BlueContainer = styled.div`
+  height: 800px;
+  background-color: #25618a;
+  width: 100vw;
+`;
+
+export const FormContent = styled.div`
+  max-width: 1244px;
+  padding-top: 140px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  h3 {
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: -0.07px;
+    line-height: 16px;
+    margin-bottom: 14px;
+    position: relative;
+
+    &:before {
+      content: '';
+      height: 2px;
+      width: 40px;
+      transform: scaleY(-1);
+      border-radius: 2.5px;
+      background-color: #0f3560;
+      position: absolute;
+      bottom: 50%;
+      left: -50px;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    max-width: 650px;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 19px;
+
+    span {
+      color: #0f3560;
+    }
+  }
+
+  p {
+    max-width: 656px;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.18px;
+    line-height: 22px;
+  }
+`;
+
+export const ProtechInfos = styled.div`
+  div {
+    margin-top: 33px;
+  }
+  h4 {
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  p {
+    opacity: 0.5;
+    color: #ffffff;
+  }
+`;
+
+export const LinkButton = styled.a<{ color: string }>`
+  animation: ${appear} 3s;
+  font-size: 11px;
+  display: block;
+  border: 1px solid ${props => props.color};
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+  padding-top: 18px;
+  color: ${props => props.color};
+  text-align: center;
+  transition: filter 0.2s;
+  cursor: pointer;
+  margin-top: 60px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  line-height: 13px;
+  text-align: center;
+
+  transition: filter 0.2s;
+  &:hover {
+    filter: opacity(0.5);
   }
 `;

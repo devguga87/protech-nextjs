@@ -10,6 +10,9 @@ import { CardTecnologias } from 'components/CardTecnologias';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { CardVagas } from 'components/CardVagas';
+import { Form } from 'components/Form';
+import { Button } from 'components/Button';
+import { LinkRedes } from 'components/LinksRedes';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -17,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Protech | Quem Somos</title>
+        <title>Protech | Home </title>
       </Head>
       <S.OrangeContainer>
         <S.ContainerBackground></S.ContainerBackground>
@@ -32,14 +35,12 @@ export default function Home() {
               Geramos SOLUÇÕES EM TECNOLOGIA que a sua empresa precisa para
               crescer.
             </p>
+            <Link href="/quemsomos">
+              <S.LinkButton color="#ffffff">CONHEÇA A PROTECH</S.LinkButton>
+            </Link>
           </div>
 
-          <Scroll.Link
-            to="instalacoes"
-            smooth={true}
-            duration={800}
-            offset={-100}
-          >
+          <Scroll.Link to="servicos" smooth={true} duration={800} offset={-100}>
             <S.NavArrow href="">
               <img
                 src="/quemsomos/setascroll.svg"
@@ -48,24 +49,28 @@ export default function Home() {
             </S.NavArrow>
           </Scroll.Link>
         </S.ContentContainer>
+        <LinkRedes />
       </S.OrangeContainer>
 
       <S.GrayContainer>
-        <S.WorkContent>
-          <div>
-            <h3>SOLUÇÕES INOVADORAS</h3>
-            <h2>
-              <span>SERVIÇOS</span>.
-            </h2>
-            <p>Desenvolvemos serviços pensando nas pessoas.</p>
-            <p>Foco nos resultados do cliente.</p>
-          </div>
-          <S.ServiceCardContainer>
-            <ServiceCard title="desenvolvimento" />
-            <ServiceCard title="consultoria" />
-            <ServiceCard title="design" />
-          </S.ServiceCardContainer>
-        </S.WorkContent>
+        <Scroll.Element name="servicos">
+          <S.WorkContent>
+            <div>
+              <h3>SOLUÇÕES INOVADORAS</h3>
+              <h2>
+                <span>SERVIÇOS</span>.
+              </h2>
+              <p>Desenvolvemos serviços pensando nas pessoas.</p>
+              <p>Foco nos resultados do cliente.</p>
+            </div>
+            <S.ServiceCardContainer>
+              <ServiceCard title="desenvolvimento" />
+              <ServiceCard title="consultoria" />
+              <ServiceCard title="design" />
+            </S.ServiceCardContainer>
+            <img src="/icoScrollUp.svg" alt="" />
+          </S.WorkContent>
+        </Scroll.Element>
       </S.GrayContainer>
 
       <S.OrangeContainer2>
@@ -82,24 +87,24 @@ export default function Home() {
           </div>
           <S.MiniCardsContainer>
             <MiniCards
-              number="01"
-              title="PLANEJAMENTO E PESQUISA"
-              description="Nesta fase fazemos todos os levantamentos, pesquisas e planejamentos necessários."
+              numeroDoCard="01"
+              titulo="PLANEJAMENTO E PESQUISA"
+              descricao="Nesta fase fazemos todos os levantamentos, pesquisas e planejamentos necessários."
             />
             <MiniCards
-              number="02"
-              title="UX/UI DESIGN"
-              description="Nesta fase ocorre a análise, a pesquisa e a definição de personas, a arquitetura da informação,  a ideação, a geração de protótipos e o UI Design."
+              numeroDoCard="02"
+              titulo="UX/UI DESIGN"
+              descricao="Nesta fase ocorre a análise, a pesquisa e a definição de personas, a arquitetura da informação,  a ideação, a geração de protótipos e o UI Design."
             />
             <MiniCards
-              number="03"
-              title="DESENVOLVIMENTO"
-              description="Esta é a fase de Front-end e desenvolvimentO."
+              numeroDoCard="03"
+              titulo="DESENVOLVIMENTO"
+              descricao="Esta é a fase de Front-end e desenvolvimentO."
             />
             <MiniCards
-              number="04"
-              title="IMPLANTAÇÃO E RESULTADOS"
-              description="Fase de implantação, testes, manutenção e suporte técnico."
+              numeroDoCard="04"
+              titulo="IMPLANTAÇÃO E RESULTADOS"
+              descricao="Fase de implantação, testes, manutenção e suporte técnico."
             />
           </S.MiniCardsContainer>
           <p>
@@ -111,6 +116,7 @@ export default function Home() {
             <CardTecnologias />
             <CardTecnologias />
           </S.CardTecnologiasContainer>
+          <img src="/icoScrollUp.svg" alt="" />
         </S.WorkContent2>
       </S.OrangeContainer2>
 
@@ -123,6 +129,9 @@ export default function Home() {
             </h2>
             <p>Vamos trabalhar juntos em seu próximo projeto?</p>
           </div>
+          <Link href="/cases">
+            <S.LinkButton color="#0F3560">VER TODOS</S.LinkButton>
+          </Link>
         </S.InstContent>
         <S.ImageContent>
           <S.StyledSwiper
@@ -152,21 +161,32 @@ export default function Home() {
         </S.ImageContent>
       </S.WhiteContainer>
 
-      <S.OrangeContainer2>
+      <S.OrangeContainer3>
         <S.WorkContent2>
           <div>
             <h3>CONFIRA NOSSAS VAGAS</h3>
             <h2>
               <span>TRABALHE</span> CONOSCO<span>.</span>
             </h2>
-            <p>
+            <h6>
               Venha crescer com a gente! Confira as vagas em aberto e nos envie
               o seu currículo/portfólio.
-            </p>
+            </h6>
           </div>
           <S.MiniCardsContainer>
-            <CardVagas />
-            <CardVagas />
+            <CardVagas
+              numeroDoCard="01"
+              cargo="DESENVOLVEDOR .NET"
+              senioridade="SENIOR"
+              descricao="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            />
+            <CardVagas
+              numeroDoCard="02"
+              cargo="UX/UI DESIGNER"
+              senioridade="PLENO"
+              descricao="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            />
+
             <S.Depoimento>
               <img src="/logo.svg" alt="icone" />
               <p>
@@ -184,7 +204,51 @@ export default function Home() {
             </S.Depoimento>
           </S.MiniCardsContainer>
         </S.WorkContent2>
-      </S.OrangeContainer2>
+      </S.OrangeContainer3>
+
+      <S.BlueContainer>
+        <S.FormContent>
+          <div>
+            <h3>PRONTO PARA INICIAR O SEU PROJETO?</h3>
+            <h2>
+              VAMOS <span>CONVERSAR</span>?
+            </h2>
+            <p>
+              Será um prazer conversar com você! Preencha o formulário abaixo
+              para que o nosso comercial possa entrar em contato ou fale conosco
+              por telefone.
+            </p>
+            <Form />
+          </div>
+
+          <S.ProtechInfos>
+            <div>
+              <h4>HORÁRIO DE FUNCIONAMENTO</h4>
+              <p>9hr às 18hr.</p>
+            </div>
+
+            <div>
+              <h4>ENDEREÇO</h4>
+              <p>Av. Francisco Porto, 593</p>
+              <p>Sala 3 - Grageru</p>
+              <p>Aracaju - SE</p>
+              <p>49025-230</p>
+            </div>
+
+            <div>
+              <h4>CONTATO</h4>
+              <h4>+55[79]3023-6697</h4>
+              <p>joaopaulo@protechsolutions.com.br</p>
+            </div>
+          </S.ProtechInfos>
+        </S.FormContent>
+      </S.BlueContainer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15669.63755585909!2d-37.058194!3d-10.932416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42fb28ef304a2048!2sProtech%20Solutions!5e0!3m2!1spt-BR!2sbr!4v1616698976037!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="450"
+        loading="lazy"
+      ></iframe>
     </>
   );
 }

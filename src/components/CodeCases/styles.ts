@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appear = keyframes`
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+`;
 
 export const WhiteContainer = styled.div`
   max-width: 100vw;
@@ -25,6 +34,8 @@ export const CasesContainer = styled.div`
 `;
 
 export const ProjectDescription = styled.div`
+  animation: ${appear} 2s;
+
   h2 {
     color: #4a4a4a;
     font-size: 13px;
@@ -63,6 +74,7 @@ export const ProjectDescription = styled.div`
 `;
 
 export const ImagesContainer = styled.div`
+  animation: ${appear} 4s;
   /* width:100%; */
   img {
     display: flex;

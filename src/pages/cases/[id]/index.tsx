@@ -1,27 +1,27 @@
 import Head from 'next/head';
 
-import { CodeCases } from '../../../components/CodeCases'
+import { CodeCases } from '../../../components/CodeCases';
 import { IntroContainer } from '../../../components/IntroContainer';
 
-import cases from '../../../../cases.json'
+import cases from '../../../../cases.json';
 
 interface Image {
-  id:number;
-  name:string;
+  id: number;
+  name: string;
 }
 
-interface CaseProps{
-  case :{
-    title:string;
-    description:string;
-    client:string;
-    date:string;
-    link?:string;
-    images:Image[]
-  }
+interface CaseProps {
+  case: {
+    title: string;
+    description: string;
+    client: string;
+    date: string;
+    link?: string;
+    images: Image[];
+  };
 }
 
-export default function Case(props:CaseProps){
+export default function Case(props: CaseProps) {
   return (
     <>
       <Head>
@@ -36,14 +36,11 @@ export default function Case(props:CaseProps){
         link={props.case.link}
       />
     </>
-  )
+  );
 }
 
-Case.getInitialProps = ({query})=>{
+Case.getInitialProps = ({ query }) => {
   return {
-    case: cases[query.id]
-  }
-}
-
-
-
+    case: cases[query.id],
+  };
+};

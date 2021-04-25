@@ -1,17 +1,24 @@
 import * as S from './styles';
 
-export function CardVagas() {
+interface CardVagasProps {
+  numeroDoCard: string;
+  cargo: string;
+  senioridade: string;
+  descricao: string;
+}
+
+export function CardVagas({
+  numeroDoCard,
+  cargo,
+  senioridade,
+  descricao,
+}: CardVagasProps) {
   return (
     <S.Container2>
-      <h4>01</h4>
-      <h5>DESENVOLVEDOR SENIOR</h5>
-      <h5>.NET</h5>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industrys standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
-      </p>
+      <h4>{numeroDoCard}</h4>
+      <h5>{cargo}</h5>
+      <h5>{senioridade}</h5>
+      <p>{descricao}</p>
       <button>SAIBA MAIS</button>
     </S.Container2>
   );
