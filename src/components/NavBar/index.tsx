@@ -12,7 +12,7 @@ export function NavBar() {
 
   if (router.pathname == '/') {
     return (
-      <S.Container background="transparent">
+      <S.Container backgroundImage="/backgroundProtech.jpg">
         <S.HeaderContainer color="white">
           <img src="/logo.svg" alt="Logo Protech" />
           <nav>

@@ -5,7 +5,7 @@ export const Container = styled.div<{ background: 'string'; color: 'string' }>`
   background: ${props => props.background};
   max-width: 400px;
   box-shadow: 0 6px 18px -2px rgba(0, 0, 0, 0.48);
-  padding: 2rem 2rem;
+  padding: 2.5rem 2.5rem;
 
   img {
     margin-bottom: 38px;
@@ -27,6 +27,6 @@ export const Container = styled.div<{ background: 'string'; color: 'string' }>`
     font-size: 13px;
     letter-spacing: 0.01px;
     margin-bottom: 20px;
-    height: 20px;
+    height: 15px;
   }
 `;

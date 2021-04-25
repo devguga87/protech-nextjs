@@ -1,6 +1,6 @@
 import { Global } from '../styles/globals';
 import { NavBar } from '../components/NavBar';
-import { Footer } from '../components/Footer';
+import { FooterProtech } from '../components/FooterProtech';
 
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       <NavBar />
       <Global />
       <Component {...pageProps} />
-      <Footer />
+      <FooterProtech />
     </>
   );
 }

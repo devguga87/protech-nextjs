@@ -19,7 +19,7 @@ export const Container2 = styled.div`
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.01px;
-    line-height: 20px;
+    line-height: 10px;
     margin-bottom: 15px;
   }
 

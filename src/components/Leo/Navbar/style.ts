@@ -19,7 +19,7 @@ export const BackgroundNavbar = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1000;
   opacity: 0.2;
 `;
 
